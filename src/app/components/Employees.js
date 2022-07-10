@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import EmployeeCard from './EmployeeCard';
+import AddEmployee from './AddEmployee';
 
 const Employees = () => {
   const [employees, setEmployees] = useState([]);
@@ -9,6 +10,13 @@ const Employees = () => {
   const getEmployees = async () => {
     const { data } = await axios.get('/api/employees');
     setEmployees(data);
+  };
+
+  const createEmployee = async (firstName, lastName, email) => {
+    let newEmployee = { firstName, lastName, email };
+    let { data } = await axios.post('./api/employees', newEmployee);
+
+    setEmployees((arr) => [...arr, data]);
   };
 
   useEffect(() => {
@@ -31,6 +39,7 @@ const Employees = () => {
           </li>
         ))}
       </ul>
+      <AddEmployee createEmployee={createEmployee} />
     </div>
   );
 };
