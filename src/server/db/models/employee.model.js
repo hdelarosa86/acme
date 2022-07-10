@@ -25,12 +25,10 @@ const Employee = db.define('employee', {
   email: {
     type: STRING,
     allowNull: false,
-   
+    unique: true,
     validate: {
       notEmpty: true,
       isEmail: true,
-      unique: true,
-      
     },
   },
 });
