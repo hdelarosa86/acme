@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const seed = require();
+const seed = require('../../scripts/seed');
 const { db } = require('./db');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 8000;
