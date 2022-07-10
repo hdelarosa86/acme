@@ -34,5 +34,3 @@ Testing is going to be done using Jest and supertest. I'm going to test the enpo
  4. Create React Components to fetch all data
  5. Create React Forms to update and/or create data
  6. Apply CSS for styling
-
-

@@ -2,14 +2,14 @@ import React from 'react';
 
 const EmployeeCard = (props) => {
   return (
-    <div>
+    <div className='employeeCard'>
       <h4>
         {props.firstName} {props.lastName}
       </h4>
       <p>{props.email}</p>
-      <p>Click card to edit</p>
+      <p className="small">Click card to edit</p>
     </div>
   );
 };
 
-export default EmployeeCard
+export default EmployeeCard;

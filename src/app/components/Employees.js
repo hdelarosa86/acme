@@ -25,7 +25,7 @@ const Employees = () => {
 
   return (
     <div>
-      <ul>
+      <ul className="employeeList">
         {employees.map((employee) => (
           <li key={employee.id}>
             <Link to={`/employees/${employee.id}`}>
