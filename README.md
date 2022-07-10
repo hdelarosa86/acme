@@ -1,5 +1,7 @@
 # TO SERVE LOCALLY
-To serve this project locally, Postgres needs to be installed. Two databases need to be created, "acme" and "acme-test" to serve the project locally and to run the tests.
+To serve this project locally, Postgres needs to be installed. Two databases need to be created, "acme" and "acme-test" to serve the project locally and to run the tests. 
+'npm run start:dev' to start the local server
+'npm run test' to run the test suite
 
 ## My Project
 
