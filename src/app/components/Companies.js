@@ -14,12 +14,10 @@ const Companies = () => {
   }, []);
   return (
     <ul>
-      <div className='card'>
       {companies.map((company) => (
         <li key={company.id}>
           <Link to={`/companies/${company.id}`}>{company.name}</Link>
         </li>
-        </div>
       ))}
     </ul>
   );
