@@ -1,5 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import Companies from './Companies';
+import Employees from './Employees';
+
 
 const App = () => {
   return (
