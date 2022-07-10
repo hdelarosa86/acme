@@ -13,7 +13,7 @@ const AddEmployee = (props) => {
         <input
           name="firstName"
           type="text"
-          placeholder='"George'
+          placeholder="George"
           onChange={(e) => setFirstName(e.target.value)}
         />
       </div>
@@ -32,7 +32,7 @@ const AddEmployee = (props) => {
         <input
           name="email"
           type="email"
-          placeholder='"example@sample.com'
+          placeholder="example@sample.com"
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
